@@ -1,0 +1,307 @@
+
+
+
+ body {
+    overflow-x: hidden;
+    background-color: rosybrown ;
+    font-family: Ariel,Helvetica,sans-serif;
+    font-size: 12px;
+}
+
+.header{
+
+    background-color: khaki;
+
+}
+
+
+
+.title{
+    margin-top: 0.5%;
+    color: peru;
+    width: 100%;
+    text-align-last: 0.5%;
+
+}
+
+.logo img{
+
+    float:right;
+    margin-top: -3%;
+    width: 5%;
+    
+}
+
+.button{
+    
+}
+
+.details-flex-container{
+    display: grid;
+    grid-template-columns: repeat(3,50.7%);
+    padding: 0 15px 15px 15px;
+    gap : 1px
+}
+.target-details{
+    height: 320px;
+    background-color: #ffffff;
+}
+.container{
+    position: relative;
+    background-color: inherit;
+    width: 97%;
+    padding-left: 0px;
+    margin-left: 4%;
+}
+
+.text-center{
+    margin-left:-50%;
+    margin-top: 5%;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #525252;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.content{
+    background-color: #f7f7f7;
+    position: relative;
+    border-radius: 6px;
+    color:  #535353;
+}
+.linegraph{
+
+    text-align: center;
+    margin-top: 1%;
+    font-size: 10px;
+    
+    
+
+   }
+
+.deathagectr{
+ text-align: center;
+    margin_bottom: 2%;
+    font-size: 10px;
+    top: 70%;
+
+
+
+}
+#line_graph{
+    
+    display: inline-grid;
+    grid-template-columns: repeat(2,1fr);
+     width: 100%;
+}
+
+#death_age{
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+}
+.malefemale{
+
+      font-family: Arial, Helvetica, sans-serif;
+      
+    }
+.rect:hover { opacity: 0.5; }
+
+
+.line {
+        fill: none;
+        stroke: blueviolet;
+        stroke-width: 1.5px;
+    }
+.overlay {
+        fill: none;
+        pointer-events: all;
+    }
+
+.focus circle {
+        fill: steelblue;
+    }
+
+.focus text {
+
+        font-size: 10px;
+    }
+
+.tooltip {
+
+         fill: black;
+         stroke: #000        ;
+    }
+
+.tooltip-date, .tooltip-likes {
+        font-weight: bold;
+    }
+
+.text {
+    font-family: sans-serif;
+    font-size: 10px;
+    fill: black;
+}
+toolTip_html{
+    font-family: "Helvetica Neue",Helvetica,Arial, sans-serif;
+    position: relative;
+    display: none;
+    width:  auto;
+    height: auto;
+    background: none repeat scroll 0 0 white;
+    border: 0 none;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: -3px 3x 15px #888888;
+    color: black;
+    font: 12px sans-serif;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .bar2{
+    fill: limegreen;
+    
+  }
+
+  .button-area {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 100px;
+
+   background:khaki;
+
+    padding: 10px 10px;
+    font-size: 1.5em;
+    margin: 1em;
+    color: khaki;
+    text-decoration: none;
+    flex-grow: 1;
+    text-align-last: center;
+
+    box-shadow:1px 3px;
+
+ 
+}
+.btn-work1{
+    width: 250px;
+    height: 30px;
+    margin: 0 auto;
+    vertical-align: middle;
+    font-size: 48px;
+    color: darkred;
+}
+
+.button-area1 {
+  margin:  auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 150px;
+
+   background:khaki;
+
+    padding: 10px 10px;
+    font-size: 2em;
+    margin: 1em;
+    color: khaki;
+    text-decoration: none;
+    flex-grow: 1;
+    text-align-last: center;
+
+    box-shadow:1px 3px;
+
+ 
+}
+.btn-work{
+    width: 250px;
+    height: 30px;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+
+text { 
+            font-family: cornflowerblue; 
+            font-size: 20px;
+
+        }
+        .axis path, .axis line {
+            fill: none;
+            stroke: black;
+            shape-rendering: crispEdges;
+        }
+        
+
+        .tick text {
+            fill: black;
+            font-size: 15px;
+            font-weight: strong;
+
+        }
+
+        rect {
+            stroke: white;
+        }
+        .bar1 {
+            fill: lightskyblue;
+        }
+        .bar1:hover {
+            fill: hotpink ;
+        }
+
+        .d3-tip {
+
+            line-height: 1;
+            font-weight: bold;
+            padding: 12px;
+            background: black;
+            color: #ffffff;
+            border-radius: 1px;
+        }
+
+        .d3-tip_time {
+            line-height: 1;
+            
+            padding: 12px;
+            background: black;
+            color: #ffffff;
+            border-radius: 2px;
+        }
+
+        /* Creates a small triangle extender for the tooltip */
+        .d3-tip:after {
+            box-sizing: border-box;
+            display: inline;
+            font-size: 10px;
+            width: 100%;
+            line-height: 1;
+            color: rgba(0, 0, 0, 0.8);
+            content: "\25BC";
+            position: absolute;
+            text-align: center;
+        }
+
+        /* Style northward tooltips differently */
+        .d3-tip.n:after {
+            margin: -1px 0 0 0;
+            top: 100%;
+            left: 0;
+        }
+
+.fa fa-youtube-play {
+    border-radius: 4px;
+    border: medium solid #000000;
+    background-color:rgb(92, 250, 246);
+    font-family: "Arial", Impact, Charcoal, sans-serif;
+    font-weight: bold;
+    font-size:20px;
+    color: #ffffff;
+    padding: 5px 30px;
+    margin:8px 70px;
+}
